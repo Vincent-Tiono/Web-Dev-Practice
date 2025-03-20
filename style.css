@@ -5,14 +5,18 @@ body {
 
 /* Selector: #id */
 #new {
-    color:red;
-    margin: 10px 0 0 0; /*Top Right Bottom Left */
+    color: red;
+    margin: 10px 0 0 0;
+    /*Top Right Bottom Left */
     background-image: url(https://marketplace.canva.com/EAGIenJ__Xk/2/0/1131w/canva-brown-watercolor-floral-aesthetic-background-document-a4-20Wu25IS9UM.jpg);
     background-position: left bottom;
     border-style: solid;
-    border-width: 10px 20px; /* (Top, Bottom) (Left, Right)*/
+    border-width: 10px 20px;
+    /* (Top, Bottom) (Left, Right)*/
     border-color: blue green red yellow;
-    border-radius: 100px; /*Make the edges round*/
+    border-radius: 100px;
+    /*Make the edges round*/
+    padding: 40px 40px 40px 40px;
 }
 
 /* Selector: .class */
@@ -20,6 +24,8 @@ body {
     background-color: burlywood;
     opacity: 0.5;
     border-style: double none dashed groove;
+    outline: 20px red solid;
+    outline-offset: 50px;
 }
 
 /* Selector: all elements */
@@ -28,13 +34,62 @@ body {
 }
 
 div.test {
-    margin-top: 60pt;
-    margin-left: 20pt;
-    border-left: 50pt solid green;
+    margin-top: 60px;
+    margin-left: 20px;
+    border-left: 50px solid green;
 }
 
 .testing {
     display: block;
     margin-top: inherit;
     border-left: solid;
+}
+
+#height_width {
+    height: 150%;
+    width: 150%;
+    background-color: blue;
+    /* text-align: center; */
+    text-decoration: overline underline aqua solid 5px;
+    text-transform: capitalize;
+    text-indent: 20px;
+    letter-spacing: 20px
+}
+
+sub.subtest {
+    vertical-align: top;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th {
+    height: 50px;
+}
+
+td {
+    text-align: center;
+    padding: 40px
+}
+
+tr:hover {
+    background-image: url(https://i1.sndcdn.com/artworks-XJdVplPCbvDvJlH7-jF9c4A-t500x500.jpg);
+    background-position: top center;
+}
+
+/*
+    h2 b: all <b> elements inside <h2> elements
+    h2 > b: all <b> elements where the parent is a <h2> element
+    h2 + b: the first <b> element that are placed immediately after <h2> elements
+*/
+
+
+h2~b {
+    color: slateblue;
+    font-size: 50px;
 }
