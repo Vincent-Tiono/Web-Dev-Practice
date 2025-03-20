@@ -86,10 +86,63 @@ tr:hover {
     h2 b: all <b> elements inside <h2> elements
     h2 > b: all <b> elements where the parent is a <h2> element
     h2 + b: the first <b> element that are placed immediately after <h2> elements
+    h2 ~ b: all <b> elements that are placed after <h2> elements
 */
 
 
 h2~b {
     color: slateblue;
     font-size: 50px;
+}
+
+.dropDownButton {
+    background-color: peachpuff;
+    padding: 13px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    min-width: 150px;
+    width: auto;
+    /* Button only takes necessary space */
+    display: block;
+    /* Makes sure it's on its own line */
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+    /* Ensures it moves to a new line */
+    width: fit-content;
+    /* Prevents it from stretching to full width */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightblue;
+    width: 100%;
+    /* Matches the width of .dropdown (which is same as button) */
+    min-width: unset;
+    /* Avoids forced minimum width */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: whitesmoke;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropDownButton {
+    background-color: grey;
 }
