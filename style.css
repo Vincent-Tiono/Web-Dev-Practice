@@ -1,0 +1,40 @@
+/* Selector: element
+body {
+    background-color: red
+} */
+
+/* Selector: #id */
+#new {
+    color:red;
+    margin: 10px 0 0 0; /*Top Right Bottom Left */
+    background-image: url(https://marketplace.canva.com/EAGIenJ__Xk/2/0/1131w/canva-brown-watercolor-floral-aesthetic-background-document-a4-20Wu25IS9UM.jpg);
+    background-position: left bottom;
+    border-style: solid;
+    border-width: 10px 20px; /* (Top, Bottom) (Left, Right)*/
+    border-color: blue green red yellow;
+    border-radius: 100px; /*Make the edges round*/
+}
+
+/* Selector: .class */
+.new {
+    background-color: burlywood;
+    opacity: 0.5;
+    border-style: double none dashed groove;
+}
+
+/* Selector: all elements */
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+div.test {
+    margin-top: 60pt;
+    margin-left: 20pt;
+    border-left: 50pt solid green;
+}
+
+.testing {
+    display: block;
+    margin-top: inherit;
+    border-left: solid;
+}
